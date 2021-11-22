@@ -34,12 +34,11 @@ class PizzaController extends Controller
     }
 
     public function store() {
-
         $pizza = new Pizza();
         $pizza->name = request('name');
         $pizza->type = request('type');
         $pizza->base = request('base');
-        $pizza->price = 0;
+        $pizza->toppings = request('toppings');
         $pizza->save();
         return redirect('/')->with('mssg', 'Thanks for your order');
     }
