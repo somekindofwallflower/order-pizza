@@ -7,6 +7,15 @@ use App\Pizza;
 
 class PizzaController extends Controller
 {
+    /**
+     * PizzaController constructor.
+     * Apply pizza middleware  to all pizza action
+     */
+    //public function __construct()
+    //{
+    //    $this->middleware('auth');
+    //}
+
     public function index()
     {
         //$pizzas = Pizza::all();
