@@ -15,7 +15,7 @@
                     @endif
 
                     You are logged in!
-                    <p><a href="/pizzas">View all pizza orders</a></p>
+                    <p><a href="{{route('pizzas.index')}}">View all pizza orders</a></p>
                 </div>
             </div>
         </div>
