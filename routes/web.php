@@ -23,6 +23,6 @@ Route::post('/pizzas', 'PizzaController@store')->name('pizzas,store')->name('piz
 Route::delete('/pizzas/{id}', 'PizzaController@destroy')->middleware('auth');
 
 // php artisan route:list -> Use this command to see all the routes of the app and by including an array with respective route with the boolean value it is possible to disable a route
-Auth::routes([register => false]);
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
