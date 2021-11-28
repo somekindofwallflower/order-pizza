@@ -18,12 +18,11 @@
     @endif
 
     <div class="content">
-        <img src="/img/pizza.jpg" alt="pizza house logo" height="300px">
         <div class="title m-b-md">
             The North's Best Pizzas
         </div>
         <p class="message">{{ session('mssg' )}}</p>
-        <a href="{{route('pizzas.create')}}">Order a pizza</a>
+        <a href="{{route('pizzas.create')}}" class="order-pizza">Order a pizza</a>
     </div>
 </div>
 @endsection

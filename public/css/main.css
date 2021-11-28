@@ -27,13 +27,15 @@ body {
   right: 10px;
   top: 18px;
 }
-
+body {
+  background-image: url("../img/welcome.jpg");
+}
 .content {
   text-align: center;
 }
 
 .links > a {
-  color: #636b6f;
+  color: white;
   padding: 0 25px;
   font-size: 13px;
   font-weight: 600;
@@ -55,9 +57,9 @@ footer {
 .title {
   font-size: 50px;
   text-transform: uppercase;
-  border-bottom: 2px solid;
   padding: 12px 0;
-  color: #5e2195;
+  color: white;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -69,6 +71,8 @@ footer {
 /* create pizza form */
 
 .create-pizza {
+  border-radius: 10px;
+  opacity: 0.9;
   background: #f7f7f7;
   padding: 20px;
 }
@@ -80,11 +84,6 @@ footer {
 
 .create-pizza label {
   margin-top: 30px;
-}
-
-.create-pizza select {
-  padding: 8px;
-  width: 200px;
 }
 
 .create-pizza input[type=checkbox] {
@@ -115,6 +114,17 @@ footer {
   font-weight: bold;
 }
 
+.order-pizza {
+  font-size: 18px;
+  color: rgba(112, 19, 4, 0.95);
+  padding: 20px 40px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .pizza-details button {
   background: #5e2195;
   padding: 8px 20px;
@@ -138,8 +148,10 @@ a.back {
 }
 
 .pizza-index .pizza-item {
+  opacity: 0.8;
   margin: 10px 0;
   padding: 12px;
+  border-radius: 20px;
   background: #f4f4f4;
 }
 
@@ -159,3 +171,18 @@ a.back {
   text-decoration: none !important;
 }
 
+----------------------------- INPUT STYLES --------------------------------
+
+
+input[type=text], select, textarea {
+  padding: 8px;
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}

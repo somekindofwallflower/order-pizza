@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="wrapper pizza-index">
-    <h1>Pizza orders</h1>
+    <h1 style="color:white">Pizza orders</h1>
     @foreach($pizzas as $pizza)
         <div class="pizza-item">
             <img src="/img/small_pizza.png" alt="pizza icon">
