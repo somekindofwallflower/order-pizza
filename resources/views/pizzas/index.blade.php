@@ -7,7 +7,7 @@
         <div class="pizza-item">
             <img src="/img/small_pizza.png" alt="pizza icon">
             <h4>
-                <a href="{{route('pizzas.show', $pizza->id)}}">
+                <a href="{{ route('pizzas.show', $pizza->id )}}">
                     <p>{{ $pizza['name'] }}</p>
                 </a>
             </h4> 

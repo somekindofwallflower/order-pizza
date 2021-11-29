@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('/pizzas', 'PizzaController@index')->name('pizzas.index')->middleware('auth');
 Route::get('/pizzas/create', 'PizzaController@create')->name('pizzas.create');
-Route::get('/pizzas/{id}', 'PizzaController@show')->middleware('auth')->name('pizzas.show');
+Route::get('/pizzas/{id}', 'PizzaController@show')->name('pizzas.show')->middleware('auth');
 Route::post('/pizzas', 'PizzaController@store')->name('pizzas,store')->name('pizzas.destroy');
 Route::delete('/pizzas/{id}', 'PizzaController@destroy')->middleware('auth');
 
