@@ -105,6 +105,8 @@ footer {
 /* pizza details page */
 
 .pizza-details {
+  opacity: 0.9;
+  border-radius: 20px;
   background: #f7f7f7;
   padding: 20px;
 }
@@ -169,6 +171,12 @@ a.back {
 .pizza-index .pizza-item h4 a {
   color: #777;
   text-decoration: none !important;
+}
+
+.view-all-pizzas {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 ----------------------------- INPUT STYLES --------------------------------
